@@ -30,7 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements. txt
 
-          - name: run tests
+          - name: Run tests
             run: pytest --junitxml=results.xml -v    
 
           - name: Upload test results
