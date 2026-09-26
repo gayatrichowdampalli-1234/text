@@ -1,6 +1,5 @@
 name: Python CI
 
-
 on:
 
    Push:
@@ -32,7 +31,7 @@ jobs:
           pip install -r requirements. txt
 
           - name: run tests
-            run: pytest --junitml=restults.xml -v    
+            run: pytest --junitxml=results.xml -v    
 
           - name: Upload test results
             if: always()
